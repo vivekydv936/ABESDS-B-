@@ -1,0 +1,27 @@
+.info {
+   
+   padding: 10px 20px;
+   background-color: #6f4646;
+   border-bottom: 1px solid #653e3e;
+}
+
+.outer_div {
+    display: flex;
+   justify-content:space-between;
+   align-items: center;
+   font-size: 24px;
+   font-weight: bold;
+   background-color: antiquewhite;
+}
+.table{
+    background-color: antiquewhite;
+   
+}
+.form_class{
+    align-self: center;
+}
+table{
+    width: 500px;
+    height: 400px;
+}
+
