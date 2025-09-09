@@ -8,9 +8,39 @@
         .image{
             opacity: 0.9;
         }
+.divMain{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    height: 500px;
+
+}
+.div1{
+    background-color: #737b38;
+}
+.div2{
+    background-color: #824545;
+}
+.div3{
+    background-color: #237c47;
+}
+#common{
+    height: 200px;
+    width: 200px;
+}
+
     </style>
 </head>
 <body>
-    <img class="image" src="OIP.webp" alt="image" height="200px" width="300px" >
+    <!-- <img class="image" src="OIP.webp" alt="image" height="200px" width="300px" > -->
+     <div class="divMain"> 
+        <div id="common" class="div1"></div>
+        <div  id="common" class="div2"></div>
+        <div  id="common" class="div3"></div>
+     </div>
+
 </body>
 </html>
