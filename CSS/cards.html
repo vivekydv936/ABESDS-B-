@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Cards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #b9a565 100%);
+        }
+        .divMain {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0;
+            background: rgba(196, 66, 107, 0.1);
+        }
+        .card {
+            position: relative;
+            height: 400px;
+            width: 320px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(196, 66, 107, 0.18);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 16px 40px rgba(196, 66, 107, 0.28);
+        }
+        .card-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.85;
+            z-index: 1;
+        }
+        .card-content {
+            position: relative;
+            z-index: 2;
+            background: rgba(255,255,255,0.85);
+            border-radius: 0 0 20px 20px;
+            padding: 24px 20px 20px 20px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #c4426b;
+            margin-bottom: 10px;
+        }
+        .card-desc {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 18px;
+        }
+        .card-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+        .card-buttons button {
+            padding: 10px 22px;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: none;
+            background: linear-gradient(90deg, #6fbb79 60%, #fbc2eb 100%);
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(196, 66, 107, 0.12);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .card-buttons button:hover {
+            background: linear-gradient(90deg, #fbc2eb 0%, #c4426b 100%);
+            transform: scale(1.07);
+        }
+    </style>
+</head>
+<body>
+    <div class="divMain">
+        <div class="card">
+            <div class="card-bg" style="background-image: url('pizza.webp');"></div>
+            <div class="card-content">
+                <div class="card-title">Delicious Pizza</div>
+                <div class="card-desc">Cheesy, hot, and loaded with toppings. Try our best-selling pizza!</div>
+                <div class="card-buttons">
+                    <button>Order Now</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-bg" style="background-image: url('burger.webp');"></div>
+            <div class="card-content">
+                <div class="card-title">Juicy Burger</div>
+                <div class="card-desc">Savor the taste of our juicy burgers with fresh veggies and sauces.</div>
+                <div class="card-buttons">
+                    <button>Order Now</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-bg" style="background-image: url('pizza.webp');"></div>
+            <div class="card-content">
+                <div class="card-title">Classic Pizza</div>
+                <div class="card-desc">A classic favorite with a crispy crust and rich tomato sauce.</div>
+                <div class="card-buttons">
+                    <button>Order Now</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
