@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+.butt{
+    background-color:yellow;
+    height: 100px;
+    width: 100px;
+}
+
+
+    </style>
 </head>
 <body>
+
+<div class="butt"> <button onclick="hello()"> click</button></div>
+<p id="para"> </p>
+
     <script>
+
+        function hello(){
+            document.getElementById("para").innerHTML="<h1> hello world</h1>"
+        }
+
+
+
 
         // function abes(){
         //     document.write("hello world")
         // }
         // abes();
 
-        function addition(){
-            var a=10;
-            var b=9;
-            var c=a+b;
-            document.write(c);
-        }
-        addition();
-        document.write("<br>")
+        // function addition(){
+        //     var a=10;
+        //     var b=9;
+        //     var c=a+b;
+        //     document.write(c);
+        // }
+        // addition();
+        // document.write("<br>")
 
-         function subtraction(){
-            var a=10;
-            var b=9;
-            var c=a-b;
-            document.write(c);
-        }
-        subtraction();
+        //  function subtraction(){
+        //     var a=10;
+        //     var b=9;
+        //     var c=a-b;
+        //     document.write(c);
+        // }
+        // subtraction();
 
 
 
