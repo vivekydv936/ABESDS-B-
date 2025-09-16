@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #2874f0;
+            padding: 12px 0;
+        }
+
+        .main {
+            max-width: 1248px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        #logo {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .search-container {
+            flex: 1;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 2px;
+            font-size: 14px;
+            height: 36px;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .categories {
+            background-color: white;
+            padding: 12px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+
+        .category-list {
+            max-width: 1248px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .category img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .category span {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="main">
+            <img id="logo" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="Flipkart">
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search for Products, Brands and More">
+            </div>
+
+            <div class="nav-items">
+                <a href="#" class="nav-item">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" class="icon" alt="">
+                    Login
+                </a>
+                <a href="#" class="nav-item">Cart</a>
+                <a href="#" class="nav-item">Become a Seller</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <div class="category-list">
+            <div class="category">
+                <img src="minutes.webp" alt="Minutes">
+                <span>Minutes</span>
+            </div>
+            <div class="category">
+                <img src="grocery.webp" alt="Mobiles">
+                <span>Mobiles & Tablets</span>
+            </div>
+            <div class="category">
+                <img src="grocery.webp" alt="Fashion">
+                <span>Fashion</span>
+            </div>
+            <div class="category">
+                <img src="tv.webp" alt="Electronics">
+                <span>Electronics</span>
+            </div>
+            <div class="category">
+                <img src="tv.webp" alt="Home">
+                <span>Home & Furniture</span>
+            </div>
+            <div class="category">
+                <img src="mobile.webp" alt="TV">
+                <span>TVs & Appliances</span>
+            </div>
+            <div class="category">
+                <img src="mobile.webp" alt="Flights">
+                <span>Flight Bookings</span>
+            </div>
+            <div class="category">
+                <img src="grocery.webp" alt="Grocery">
+                <span>Grocery</span>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
