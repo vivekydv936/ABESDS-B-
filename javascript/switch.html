@@ -11,16 +11,35 @@
 
     </style>
 </head>
-<body>
+<body id="full_page">
 
-<div class="butt"> <button onclick="hello()"> click</button></div>
-<p id="para"> </p>
+<button onclick="Green()">greeen</button>
+<button onclick="Blue()">Blue</button>
+<button onclick=Red()>Red</button>
+
+
+
+<!-- <div class="butt"> <button onclick="hello()"> click</button></div>
+<p id="para"> </p> -->
 
     <script>
-
-        function hello(){
-            document.getElementById("para").innerHTML="<h1> hello world</h1>"
+        function Red(){
+            document.getElementById("full_page").style.backgroundColor="red"
         }
+        function Green(){
+            document.getElementById("full_page").style.backgroundColor="Green"
+        }
+        function Blue(){
+            document.getElementById("full_page").style.backgroundColor="Blue"
+        }
+
+
+
+
+
+        // function hello(){
+        //     document.getElementById("para").innerHTML="<h1> hello world</h1>"
+        // }
 
 
 

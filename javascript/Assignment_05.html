@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .card {
+        background-color: rgb(154, 173, 154);
+        border-color: aqua;
+        height: 800px;
+        width: 800px;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo {
+        background-color: rgb(220, 208, 210);
+        display: flex;
+        /* justify-content: center;
+    align-items: center; */
+      }
+      .counter {
+        padding-left: 200px;
+        /* background-color: rgb(191, 107, 107); */
+      }
+      .circle {
+        /* box-sizing: border-box; */
+        border: 2px solid black;
+        border-radius: 70%;
+        height: 150px;
+
+        width: 150px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #plus {
+        margin-top: 200px;
+        margin-left: 50px;
+        height: 80px;
+        width: 150px;
+        color: rgb(12, 18, 18);
+        background-color: rgb(220, 208, 210);
+      }
+      #minus {
+        margin-left: 406px;
+        margin-top: 200px;
+        height: 80px;
+        width: 150px;
+        color: rgb(12, 18, 18);
+        background-color: rgb(220, 208, 210);
+      }
+    h1{
+        margin-left: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <div class="logo">
+          <img src="tv.webp" alt="" />
+          <div class="counter"><h1>Counter App</h1></div>
+        </div>
+        <div class="circle">
+          <h1 id="display">0</h1>
+        </div>
+        <button id="plus" onclick="plus()">PLUS</button>
+        <button id="minus" onclick="minus()">MINUS</button>
+      </div>
+
+      <div class="new"> <img src="minutes.webp" id="image"></div>
+      <button onclick="forimage()"> click</button>
+    </div>
+
+    <script>
+      var count = 0;
+      function plus() {
+        if (count < 10) {
+          count++;
+          document.getElementById("display").innerHTML = count;
+        }
+        else{
+            alert("invalid")
+        }
+      }
+      function minus() {
+        if (count >0) {
+          count--;
+          document.getElementById("display").innerHTML = count;
+        }
+        else{
+            alert("invalid")
+        }
+      }
+
+      function forimage(){
+        document.getElementById("image")
+      }
+    </script>
+  </body>
+</html>
