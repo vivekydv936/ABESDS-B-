@@ -7,6 +7,7 @@
 </head>
 <body>
     <p id="p1"> </p>
+    <p id="p2"> </p>
     <script>
         const person ={
             fname :'vivek',
@@ -16,6 +17,15 @@
         }
 
              document.getElementById('p1').innerHTML=person.fname;
+          // console.log(person)
+        const person2 =new Object({
+            fname :'vivek',
+            lname :'yadav',
+            age:24
+
+        })
+
+             document.getElementById('p2').innerHTML=person.lname;
           // console.log(person)
 
     </script>

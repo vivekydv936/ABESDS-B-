@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmrnt_06</title>
+    <style>
+        .main{
+            height: 800px;
+            width: auto;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+        }
+        .card1{
+            width: 500px;
+
+            height: 600px;
+            /* display: flex;
+            justify-content: center; */
+            align-items: center; 
+            border-radius: 3%;
+            border: 2px solid black;
+            /* background-color: gray; */
+            margin-right: 4px;
+        }
+        .card2{
+            width: 500px;
+
+            height: 600px;
+            /* display: flex;
+             justify-content: center; */
+            border: 2px solid black; 
+            border-radius: 3%;
+            /* background-color: rgb(169, 102, 102); */
+        }
+        .common{
+            background-color: rgb(3, 5, 13);
+             display: flex;
+             justify-content: center; 
+             margin-bottom: 10px;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+       <div class="main">
+            <div id="idcard1" class="card1">
+                 <div class="common" id="innercard1"></div>
+                 <div class="common" id="innercard2"></div>
+                 <div class="common" id="innercard3"></div>
+                </div>
+            <div class="card2">
+                 <div class="common"  id="innercard11"></div>
+                 <div class="common" id="innercard22"></div>
+                 
+            </div>
+
+
+       </div> 
+
+
+<script>
+    const student1 =new Object({
+        name:'vivek',
+        class:"b.tech",
+        branch:'IT',
+        RollNo:'123'
+       
+        
+    })
+    const student2 =new Object({
+        name:'udbhav',
+        class:"b.tech",
+        branch:'IT',
+        RollNo:'123'
+        
+    })
+    const student3 =new Object({
+        name:'Yash',
+        class:"b.tech",
+        branch:'IT',
+        RollNo:'123'
+        
+    })
+    const student4 =new Object({
+        name:'Rohit',
+        class:"b.tech",
+        branch:'DS',
+        RollNo:'123'
+        
+    })
+    const student5 =new Object({
+        name:'sanskar',
+        class:"b.tech",
+        branch:'ECE',
+        RollNo:'123'
+        
+    })
+     document.getElementById('innercard1').innerHTML="Name:"+student1.name+"<br>"+"Roll NO:"+student1.RollNo+"<br>"+"Branch"+student1.branch+"<br>"+"Class:"+student1.class
+     document.getElementById('innercard2').innerHTML="Name:"+student2.name+"<br> ROll NO "+student2.RollNo+"<br>  Branch"+student2.branch+"<br> Class"+student2.class
+     document.getElementById('innercard3').innerHTML="Name:"+student3.name+"<br> ROll NO "+student3.RollNo+"<br> Branch"+student3.branch+"<br>"+student3.class
+     document.getElementById('innercard11').innerHTML="Name:"+student4.name+"<br> ROll NO "+student4.RollNo+"<br> Branch"+student4.branch+"<br>"+student4.class
+     document.getElementById('innercard22').innerHTML="Name:"+student5.name+"<br> ROll NO "+student5.RollNo+"<br> Branch"+student5.branch+"<br>"+student5.class
+    document.querySelector(".card1").style="color: white"
+    document.querySelector(".card2").style="color: white,font-size=20px"
+</script>
+
+
+</body>
+</html>
